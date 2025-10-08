@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madame Zoltar — Prophecy Booth</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage">
+    <section class="madame-wrap" aria-live="polite">
+      <img src="assets/madame.png" alt="Madame Zoltar gazing into a crystal ball" class="madame" />
+      <div class="glow"></div>
+
+      <button id="askBtn" class="ask-btn" aria-label="Ask Madame Zoltar for a prophecy">
+        Ask Madame Zoltar
+      </button>
+
+      <!-- Floating bubble with the prophecy -->
+      <div id="bubble" class="bubble" hidden>
+        <p id="prophecyText" class="bubble-text"></p>
+        <div class="pointer"></div>
+      </div>
+
+      <!-- Single revealed tarot card -->
+      <figure id="revealCard" class="card-reveal" hidden>
+        <img id="cardImg" alt="" loading="lazy" />
+        <figcaption id="cardCaption"></figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
